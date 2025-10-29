@@ -10,6 +10,6 @@ export { default as BlogLocalJsonPage2_10 } from './BlogLocalJsonPage2_10'
 
 export { default as BlogNodePage_10 } from './BlogNodePage_10'
 
-export { default as BookListPage_10 } from './Booklistpage_10'
+export { default as BookListPage_10 } from './BookListpage_10'
 
 export { default as BlogSupaPage_10 } from './BlogSupaPage_10'
