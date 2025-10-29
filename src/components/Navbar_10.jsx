@@ -113,6 +113,10 @@ function Navbar_10() {
                 <Link to='#'>Demo +</Link>
                 <div className='sub-menu-wrapper slideInUp'>
                   <ul className='sub-menu'>
+                    {' '}
+                    <li className='menu-item'>
+                      <Link to='/Booklist_10'>W2-BookList_10 1</Link>
+                    </li>
                     <li className='menu-item'>
                       <Link to='/Static_10'>W3-BlogStatic_10 1</Link>
                     </li>
@@ -123,11 +127,36 @@ function Navbar_10() {
                       <Link to='/node_10'>W4-BlogNode_10</Link>
                     </li>
                     <li className='menu-item'>
-                      <Link to='#'>W5-BlogSupa_10</Link>
+                      <Link to='/supa_10'>W5-BlogSupa_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/supa_10'>W6-tutorials_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/localjson2_10'>W7-BlogLocalJson2_10</Link>
                     </li>
                   </ul>
                 </div>
               </li>
+              <li className='menu-item dropdown'>
+                <Link to='#'>Tutorials +</Link>
+                <div className='sub-menu-wrapper slideInUp'>
+                  <ul className='sub-menu'>
+                    {' '}
+                    <li className='menu-item'>
+                      <Link to='/tutorials/t11_10'>
+                        T11-ErrorExamplePage_10
+                      </Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/tutorials/t12_10'>
+                        T12_UseStateBasicsPage_10
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
               <li className='menu-item'>
                 <Link to='#'>Blog</Link>
               </li>

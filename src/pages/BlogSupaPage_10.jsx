@@ -4,17 +4,20 @@ import { useState, useEffect } from 'react'
 import Blog_10 from '../components/Blog_10'
 import Wrapper from '../assets/wrappers/Blog2_10'
 
-const api_url = 'http://localhost:5000/api/blog_10'
+//const api_url = 'http://localhost:5000/api/blog_10'
 
-const BlogNodePage_10 = () => {
+import { supabase } from '../db/clientSupabase.js'
+
+const BlogSupaPage_10 = () => {
   const [name, setName] = useState('pengsenfang')
   const [id, setId] = useState('213410110')
   const [blogs_10, setBlogs_10] = useState([])
 
-  const fetchBlogFromNodeServer = async () => {
+  const fetchBlogFromSupaServer = async () => {
     try {
-      const response = await fetch(api_url)
-      const data = await response.json()
+      let { data, error } = await supabase.from('blog_10').select('*')
+      //const response = await fetch(api_url)
+      //const data = await response.json()
       console.log('blogs', data)
       setBlogs_10(data)
     } catch (error) {
@@ -22,7 +25,7 @@ const BlogNodePage_10 = () => {
     }
   }
   useEffect(() => {
-    fetchBlogFromNodeServer()
+    fetchBlogFromSupaServer()
   }, [])
 
   return (
@@ -51,4 +54,4 @@ const BlogNodePage_10 = () => {
   )
 }
 
-export default BlogNodePage_10
+export default BlogSupaPage_10
