@@ -157,8 +157,43 @@ function Navbar_10() {
                 </div>
               </li>
 
-              <li className='menu-item'>
-                <Link to='#'>Blog</Link>
+              <li className='menu-item dropdown'>
+                <Link to='#'>Quiz1 +</Link>
+                <div className='sub-menu-wrapper slideInUp'>
+                  <ul className='sub-menu'>
+                    <li className='menu-item'>
+                      <Link to='/quiz1/static_10'>TourStaticPage_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/quiz1/static2_10'>TourStaticPage2_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/quiz1/static3_10'>TourStaticPage3_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/quiz1/node_10'>TourNodePage_10</Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className='menu-item dropdown'>
+                <Link to='#'>MIDTERM +</Link>
+                <div className='sub-menu-wrapper slideInUp'>
+                  <ul className='sub-menu'>
+                    <li className='menu-item'>
+                      <Link to='/midterm/p1_10'>P1_StaticPage_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/midterm/p2_10'>P2_StaticPage_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/midterm/p3_10'>P3_NodePage_10</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link to='/midterm/p4_10'>P4_SupaPage_10</Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className='menu-item'>
                 <Link to='#'>Contact</Link>

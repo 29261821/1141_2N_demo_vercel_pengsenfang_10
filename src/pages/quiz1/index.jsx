@@ -1,0 +1,6 @@
+export { default as Quiz1LayoutPage_10 } from './Quiz1LayoutPage_10'
+export { default as Quiz1Page_10 } from './Quiz1Page_10'
+export { default as TourStaticPage_10 } from './TourStaticPage_10'
+export { default as TourStaticPage2_10 } from './TourStaticPage2_10'
+export { default as TourStaticPage3_10 } from './TourStaticPage3_10'
+export { default as TourNodePage_10 } from './TourNodePage_10'
